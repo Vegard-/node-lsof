@@ -14,7 +14,7 @@ call it from your `status` commands to see how many open file descriptors your p
 
 ## Usage
 
-    var lsof = require('../lib/lsof');
+    var lsof = require('lsof');
 
     lsof.counters(function(data) {
         console.log(data);
