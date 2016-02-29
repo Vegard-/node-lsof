@@ -28,7 +28,7 @@ call it from your `status` commands to see how many open file descriptors your p
         *
         */
     });
-    
+
 
     lsof.raw(function(data) {
         console.log(data);
@@ -78,7 +78,7 @@ call it from your `status` commands to see how many open file descriptors your p
     });
     
     // Or, inspect a port in use
-    lsof.rawTcpPort(11211, function(data) {
+    lsof.rawTcpPort('127.0.0.1', 11211, function(data) {
         console.log(data);
         /*
          * [ { state: 'listen',
@@ -104,6 +104,3 @@ call it from your `status` commands to see how many open file descriptors your p
          *
          */
     }
-
-
-    
